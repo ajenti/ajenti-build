@@ -11,7 +11,6 @@ module.exports = class ESCompiler {
   }
 
   compile (input) {
-    console.log(this.plugins)
     let code = babel.transform(input, {
       plugins: this.plugins,
       presets: this.presets,
