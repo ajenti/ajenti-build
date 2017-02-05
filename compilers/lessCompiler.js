@@ -16,7 +16,7 @@ module.exports = class LESSCompiler {
         if (error) {
           reject(error)
         } else {
-          resolve(output)
+          resolve(output.css)
         }
       })
     })
