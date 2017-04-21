@@ -91,11 +91,11 @@ const buildPlugin = (path) => {
       let content = results
         .filter((x) => !!x && x.type === type && !x.resource.vendor)
         .map((x) => x.output)
-        .join('')
+        .join('\n')
       let vendorContent = results
         .filter((x) => !!x && x.type === type && x.resource.vendor)
         .map((x) => x.output)
-        .join('')
+        .join('\n')
 
       let builtPath = nodePath.join(path, 'resources', 'build')
       mkdirp.sync(builtPath)

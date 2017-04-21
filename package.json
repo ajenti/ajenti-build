@@ -1,10 +1,10 @@
 {
   "name": "ajenti-build",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Ajenti plugin resource builder",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "ajenti-build": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "babel-preset-stage-1": "^6.22.0",
     "bluebird": "^3.4.7",
     "coffee-script": "^1.12.3",
+    "glob": "^7.1.1",
     "js-yaml": "^3.7.0",
     "less": "^2.7.2",
     "mkdirp": "^0.5.1",
